@@ -11,6 +11,7 @@ const About = () => (
     </p>
     <p>
       Visit the Github repo for more information on how to use this project.
+      test
     </p>
     <p>- Elisha Nuchi</p>
     <a
