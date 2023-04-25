@@ -341,6 +341,7 @@ const devClientConfigs = clientEntrypoints.map((clientEntrypoint) => {
 
 // webpack settings used by the server-side code
 const serverConfig = {
+  target: ['web', 'es5'],
   ...sharedClientAndServerConfig,
   name: 'SERVER',
   // server config can't use 'development' mode

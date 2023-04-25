@@ -11,7 +11,7 @@ const About = () => (
     </p>
     <p>
       Visit the Github repo for more information on how to use this project.
-      test
+      test rhino working again
     </p>
     <p>- Elisha Nuchi</p>
     <a

@@ -14,6 +14,15 @@ const SheetEditor = () => {
     serverFunctions.getSheetsData().then(setNames).catch(alert);
   }, []);
 
+  const getEmail = async () => serverFunctions.getEmail();
+
+  useEffect(() => {
+    (async () => {
+      const email = await getEmail();
+      console.log('email from TestAccount', email);
+    })();
+  }, []);
+
   const deleteSheet = (sheetIndex) => {
     serverFunctions.deleteSheet(sheetIndex).then(setNames).catch(alert);
   };

@@ -1,5 +1,7 @@
 import { GASClient } from 'gas-client';
-import * as publicServerFunctions from '../../server';
+// import * as publicServerFunctions from '../../server';
+const publicServerFunctions = require('../../server');
+
 
 const { serverFunctions } = new GASClient<typeof publicServerFunctions>({
   // this is necessary for local development but will be ignored in production
